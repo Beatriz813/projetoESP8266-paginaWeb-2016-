@@ -1,0 +1,71 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'font1';
+    src: url("../fontes/Roboto-regular.ttf");
+}
+@font-face {
+    font-family: 'font2';
+    src: url("../fontes/SairaExtraCondensed-ExtraLight.ttf");
+}
+		body{
+			position: static;
+		}
+		article{
+			width: 100vw;
+			height: 100vh;
+			background-color: rgba(157, 152, 253, 0.51);
+		}
+
+		button{
+			position:relative; 
+			background-color: rgba(59, 89, 200, 0.65);
+			margin-bottom: 3vh;
+			margin-left: 2vw;
+			top: 15vh;
+			padding: 2vh 3vw;
+			text-transform: uppercase;
+			font-family: 'font2', sans-sarif;
+			font-size: 1.3em;
+			color: white;
+			border: none;
+			border-radius: 100px;
+		}
+		button.deCima{
+			margin-bottom: 0;
+		}
+		button.deBaixo{
+			padding: 1vh 5vw; 
+			margin-top: 30vh;
+		}
+		button:hover{
+			background-color: midnightblue;
+			cursor: pointer;
+		}
+		
+		button.temperatura{
+			padding: 1.85vh 1.85vw;
+			top: 18vh;
+		}
+		
+		iframe{
+			position: relative;
+			float: right;
+			right: 2vw;
+			bottom: 47vh;
+			max-width: 500px;
+			max-height: 450px;
+			width: 55vw;
+			height: 60vh;
+			border: solid rgba(34,31,34,0.66);
+			border-radius: 5%;
+			margin-bottom: 5px;
+			margin-right: 1vw;
+		}
+		iframe#mostrador-5{
+			position: relative;
+			float: right;
+			bottom: 40.5vh;
+			width: 55vw;
+			right: 2vw;
+
+		}		

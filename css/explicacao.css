@@ -1,0 +1,100 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'font1';
+    src: url("../fontes/Roboto-regular.ttf");
+}
+
+@font-face {
+    font-family: 'font2';
+    src: url("../fontes/SairaExtraCondensed-ExtraLight.ttf");
+}
+       
+        article{
+            padding-right: 20vw;
+            height: 100vh;
+            width: 100vw;
+            font-size: 0.85em;
+            font-family: 'font1';
+            background-color: midnightblue;
+            text-align: justify;
+            color: white;
+            position: relative;
+            right: 2vw;
+            margin-bottom: 800px;
+            margin-left: -5px;
+    }
+
+
+
+     article#primeiro{
+         
+         padding: 5vh 25vw 5vw 5vh;
+         height:153px;
+         width:304px;
+         bottom: 0;
+         background-color: rgba(188,158,255,0.7);
+         position: relative;
+
+        }
+        p{
+            padding-top: 13vh;
+            margin-right: 3vw;
+            margin-left: 3vw;
+            text-align: center;
+        }
+     iframe{
+         border: transparent;
+     }
+        iframe::-webkit-scrollbar{
+            display: none;
+        }
+        button{
+            display: inline-block;
+            font-size: 1em;
+            right: 10vw;
+            color: midnightblue;
+            border:none;
+            border-radius: 100px;
+            position: relative;
+            text-transform: uppercase;
+            float: right;
+            margin-top: 2vh;
+            padding: 10px;
+            cursor:pointer;
+            background-color: rgb(255, 255, 255);
+            transition: 0.3s;
+        }
+        button:hover{
+            background-color: rgb(234, 234, 234);
+
+        }
+         button:active{
+            background-color: rgb(234, 234, 234);
+            transform: translateY(3px);
+        }
+       button#cmd-13, #cmd-17, #cmd-15, #cmd-25, #cmd-26{
+            position: relative;
+            top: 26.5vh;
+            right: 10vw;
+        }
+        button#cmd-12{
+            position: relative;
+            top: 7vh;
+        } 
+        button#cmd-14{
+            position: relative;
+            top: 16.5vh;
+        }
+        button#cmd-23{          /*Alarme*/
+            position: relative;
+            top: 17vh;
+        }
+        button#cmd-24{
+            position: relative;
+            top: 17vh;
+        }
+        button#cmd-18{
+            position: relative;
+            top: 26.5vh;
+            right: 10vw;
+        }

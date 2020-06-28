@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Explicação dos programas</title>
+    
+<script src="../js/jquery.js"></script>
+<script type="text/javascript" src="../js/p5.js"></script>
+<script type="text/javascript" src="../js/controle-explicacao.js"></script>
+    <script>
+        $(document).ready(function(){
+             $('.comandos').click(function (){
+                 var cmds = $(this).attr('id');
+                 $.get("http://192.168.1.106:80", {valor:cmds});
+             });
+        });
+    </script>
+    <link rel="stylesheet" type="text/css" href="../css/explicacao.css">
+</head>
+
+<body>
+
+<article id="primeiro">
+
+</article>
+
+<article id="contagembinario">
+    <p>
+Este programa executa uma contagem de acordo com a lógica da máquina, ou seja, utilizando as sequências binárias de 8 bits (0 a 255).
+    </p>
+    <button id="cmd-12" class="comandos">Executar</button>
+</article>
+
+<article id="vaiVem">
+    <p>
+    Este programa realiza um efeito de "vai e vem" com os leds da placa Acepic!
+    </p>
+    <button id="cmd-13" class="comandos">Executar</button>
+</article>
+
+<article id="aquecedor">
+    <p>
+ Ativa o aquecedor da placa, alterando a temperatura medida na placa.
+ </p>
+    <button id="cmd-17" class="comandos">Executar</button>
+</article>
+
+<article id="ventoinha">
+    <p>
+    Ativa a ventoinha, na tentativa de resfriar a placa.
+</p>
+    <button id="cmd-18" class="comandos">Executar</button>
+</article>
+
+
+
+<article id="contagemZN"> <!--contagem de zero a nove-->
+    <p>
+    Este algoritmo demonstra, com os displays de 7 segmentos da placa, uma contagem desde o algarismo zero até o algarismo nove
+</p>
+    <button id="cmd-14" class="comandos">Executar</button>
+</article>
+
+<article id="escrever">
+    <p>
+    Este programa escreve a palavra "IFPA" nos displays de 7 segmentos da placa!
+    </p>
+    <button id="cmd-15" class="comandos">Executar</button>
+</article>
+
+<article id="alarme" class="musica">
+    <p>
+    Ultiliza o buzzer do KIT para soar como um alarme.
+    </p>
+    <button id="cmd-23" class="comandos">Executar</button>
+</article>
+
+<article id="rele" class="musica">
+    <p>
+    Utiliza o Relé do KIT para ativar alguma carga externa.
+    </p>
+    <button id="cmd-24" class="comandos">Executar</button>
+</article>
+
+<article id="lcd-hello">
+    <p>
+    Mostra a string selecionada no display LCD do kit ACEPIC PRO V2.1
+</p>
+    <button id="cmd-25" class="comandos">Executar</button>
+</article>
+
+<article id="lcd-IFPA">
+    <p>
+    Mostra a string selecionada no display LCD do kit ACEPIC PRO V2.1
+</p>
+    <button id="cmd-26" class="comandos">Executar</button>
+</article>
+
+</body>
+</html>

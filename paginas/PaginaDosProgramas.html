@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	 <title>programas</title>
+	 <meta charset="UTF-8"/>
+	<link rel="stylesheet" href="../css/PagProg.css">
+	<script type="text/javascript" src="../js/jquery.js"></script><!--importação da biblioteca jquery-->
+	<script src="../js/index-PagProg.js"></script><!--importação do programa javascript desta pagina e da pagina index-->
+	<script type="text/javascript" src="../js/p5.js"></script>
+	<script type="text/javascript" src="../js/controle-paginaDosProgramas.js"></script>
+	</head>
+		<body>
+
+	 <!--Article principal-->
+	 	<article id="principal"> <!--O iframe do index tem que começar mostrando esse article-->
+			<span></span>
+		</article>
+	 <!--Article principal-->
+
+
+
+
+	 <!--article leds-->
+
+		<article  id="leds">
+			<div class="menu">
+	 	<button  id="cmd-12" class="deCima" onclick="trocaTela('contagembinario', 'painel-2')">Contagem binária</button><br/>
+	 	<button  id="cmd-13" class="deBaixo" name="vaiVem" onclick="trocaTela('vaiVem', 'painel-2')">Vai e vem</button><br/>
+	 		</div>
+		  <aside>
+		 <iframe src="explicacaoDosProgramas.html#primeiro" name="painel-2" id="mostrador-2" scrolling="no" ></iframe>
+		 </aside>
+	 </article>
+	 <!--fim do articla leds-->
+
+
+	 <!--article temperatura-->
+	<!--os botões relacionados com a temperatura são de uma classe específica para realizar a programação em javascript (jquery)-->
+	 <article  id="temperatura">
+	 	<div class="menu" id="menuTemperatura">
+	 <Button  id="cmd-15" class="temperatura" onclick="trocaTela('aquecedor', 'painel-5')">Ligar aquecedor</button><br/>
+	 <Button  id="cmd-16" class="temperatura" onclick="trocaTela('ventoinha', 'painel-5')">Ligar resfriador</button><br/>
+	 <Button  id="cmd-17" class="temperatura" onclick="esperar(), trocaTela('primeiro', 'painel-5')">Visualizar temperatura</a></button><br/> <!-- A função esperar é para carregar a pagina do servidor do esp-->
+	 	</div>
+		 <aside id="tempe">
+			 <iframe src="explicacaoDosProgramas.html#primeiro" name="painel-5" id="mostrador-5" class="desajustado" scrolling="no"></iframe>
+		 </aside>
+	  </article>
+	 <!--fim do article temperatura-->
+
+
+	 <!--article do display-->
+
+	 <article  id="display">
+	 	<div class="menu">
+	 <Button  id="cmd-18" class="deCima" onclick="trocaTela('contagemZN', 'painel-3')">Contagem de 0 a 9</button><br>
+	 <Button  id="cmd-19" class="deBaixo" onclick="trocaTela('escrever', 'painel-3')">Escrever "IFPA"</button><br>
+	 </div>
+		 <aside>
+			 <iframe src="explicacaoDosProgramas.html#primeiro" id="mostrador-3" name="painel-3" scrolling="no"></iframe>
+		 </aside>
+	 </article>
+
+	 <!--fim do article display-->
+
+
+
+	 <!--article buzzer-->
+	  <article  id="cargas">
+	  	<div class="menu">
+	 <Button  id="cmd-23" class="deCima" onclick="trocaTela('alarme', 'painel-4')">Alarme</button><br>
+	 <Button  id="cmd-24" class="deBaixo" onclick="trocaTela('rele', 'painel-4')">Relé</button><br>
+	 </div>
+		  <aside>
+			  <iframe src="explicacaoDosProgramas.html#primeiro" name="painel-4" id="mostrador-4" scrolling="no"></iframe>
+		  </aside>
+	  </article>
+
+	 <!--fim do article buzzer-->
+
+
+
+
+	 <!--article dos botões-->
+
+	  <article  id="lcd">
+	 	<div class="menu">
+	 	<button id="cmd-25" class="deCima" onclick="mudaCor('cmd-25'), trocaTela('lcd-hello', 'painel-6')">Hello World</button><br>
+		<button id="cmd-26" class="deBaixo" onclick="mudaCor('cmd-26'), trocaTela('lcd-IFPA', 'painel-6')">IFPA</button><br>
+		  </div>
+		  <aside>
+		  	<iframe src="explicacaoDosProgramas.html#primeiro" name="painel-6" id="mostrador-6" class="desajustado" scrolling="no"></iframe>
+		  </aside>
+	 </article>
+	 <!--fim do article botões-->
+	 </body>
+ </html>

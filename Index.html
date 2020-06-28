@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="imagens/IFPAlogofavicon16x16.ico" type="image/ico" sizes="16x16">
+<title>controlar PIC por ESP8266</title>
+<link rel="stylesheet" href="css/estilo-final.css"/>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/index-PagProg.js"></script>
+<script type="text/javascript" src="js/p5.js"></script>
+<script type="text/javascript" src="js/controle-index.js"></script>
+</head>
+<body>
+    <div id="geral">
+<header>
+<div id="menu">
+<nav>
+    <ul id="lista">
+        <li id="item1" onclick="carregar('painel-2')"><a  href="paginas/PaginaDosProgramas.html#leds" target="painel">LEDS</a></li>
+    <li id="item2" onclick="carregar('painel-5')"><a  href="paginas/PaginaDosProgramas.html#temperatura" target="painel">TEMPERATURA</a></li>
+    <li id="item3" onclick="carregar('painel-3')"><a  href="paginas/PaginaDosProgramas.html#display" target="painel">DISPLAY</a></li>
+    <li id="item4" onclick="carregar('painel-4')"><a  href="paginas/PaginaDosProgramas.html#cargas" target="painel">CARGAS</a></li>
+    <li id="item5" onclick="carregar('painel-6')"><a  href="paginas/PaginaDosProgramas.html#lcd" target="painel">LCD</a></li>
+    </ul>
+</nav>
+</div>
+</header>
+<div>
+    <section>
+        <article id="informacoes">
+            <h1> Informações Sobre o Projeto</h1>
+           <p> Este projeto foi realizado nas dependências do Laboratório de Sistemas Microprocessados localizado no IFPA, sob a supervisão do professor Alcides Machado. O projeto tem como principal objetivo realizar o controle do Microcontrolador PIC18F4550 via WiFi, para isso foram utilizados: o módulo WiFi ESP8266; o MCU PIC18F4550; o Kit Acepic de Desenvolvimento, onde está alocado o PIC; e a Proto-Power-Supply, onde se encontra o ESP.</p>
+            <p>O intuito deste projeto é executar ações no Kit Acepic, através de comandos enviados por meio de uma rede wireless. A partir deste conceito, podem ser realizadas monitorias de qualquer lugar e a qualquer hora.</p>
+        </article>
+        
+    </section>
+
+    <aside id="janela">
+        <iframe id="mostrador" name="painel" src="paginas/PaginaDosProgramas.html#principal" scrolling="no"></iframe>
+    </aside>
+<img id="comunicacao" src="imagens/Comunicacao.png"/>
+        
+</div>
+
+<img id="IF-icon" src="imagens/IFPAlogofavicon32x32.ico"/>
+<footer>
+            Desenvolvido por: Beatriz Alcântara.
+        </footer>
+        </div>
+</body>
+</html> 

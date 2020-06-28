@@ -1,0 +1,126 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'font1';
+    src: url("../fontes/Roboto-regular.ttf");
+}
+@font-face {
+    font-family: 'font2';
+    src: url("../fontes/SairaExtraCondensed-ExtraLight.ttf");
+}
+body{
+    background-color:#FFFAFA;
+    padding: 0;
+}
+ul#lista{
+    display: block;
+    list-style: none;
+    position: absolute;
+    top: 0;
+    right: 80px;
+    margin-right: 0;
+}
+ul#lista li{
+    display: inline-block;
+    padding: 0;
+    width: 80px;
+    height: 50px;
+    margin-right: 10px;
+    background-color: rgba(59, 89, 200, 0.65);
+    transition: background-color 0.5s;
+    font-family: 'font2', sans-serif;
+    font-size: 30px;
+    color: white;
+    border-radius: 0 25px;
+
+}
+
+ul#lista li:hover{
+    background-color: #191970;
+    cursor: pointer;
+    color: white;
+
+}
+ul > li#item2{
+    width: 170px;
+    
+}
+ul  li#item3, ul li#item4{
+    width: 100px;
+}
+ul li#item5 {
+    width: 70px;
+}
+
+li a{
+    position: relative;
+    text-decoration: none;
+    color: white;
+    border-radius: 0 25px;
+    padding: 0 0.5em 0.1em 0.7em;
+    border: solid transparent;
+    max-height: 50px;
+}
+
+li#item3 a, li#item4 a{
+    padding-right: 0.2em; 
+}
+
+article#informacoes{
+    font-family: 'font1', sans-serif;
+    text-align: justify;
+    font-size: 24px;
+}
+
+section{
+    display: block;
+    float:  left;
+    width:  590px;
+    height: 620px;
+    padding: 0px 50px 0px 10px;
+    border: 2px solid;
+    background-color: #fffbff;
+    text-align: center;
+}
+
+footer{
+    position: fixed;
+    left: -40%;
+    bottom: 4%;
+    width: 100%;
+    text-align: center;
+    font-family: arial;
+    text-decoration: bold;
+}
+
+aside#janela iframe{
+    position: relative;
+    float: right;
+    right: 80px;
+    top: 100px;
+    width: 625px;
+    height: 275px;
+    border: transparent;
+    border-radius: 5%;
+    overflow: hidden;
+    max-width: 550px;
+    margin-right: 0;
+}
+
+iframe#mostrador::-webkit-scrollbar{
+    display: none;
+}
+
+img{
+    display: block;
+    float: right;
+    position: absolute;
+    right: 0px;
+    margin-right: 0;
+}
+img#comunicacao{
+    height: 220px;
+    width: 650px;
+    bottom:25px;
+    right:45px;
+}
